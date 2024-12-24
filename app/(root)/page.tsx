@@ -22,6 +22,8 @@ const Home = () => {
             totalCurrentBalance = {1250.35}
           />
         </header>
+
+        RecentTransactions
       </div>
       <RightSidebar
         user={logIn}
