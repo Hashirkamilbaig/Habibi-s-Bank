@@ -41,8 +41,8 @@ const MobileNav = ({user} : MobileNavProps) => {
                   {sidebarLinks.map((item) => {
                     const isActive = pathname === item.route || pathname.startsWith(`${item.route}/`)
                     return(
-                      <SheetClose asChild>
-                        <Link href={item.route} key={item.label} className={cn('mobilenav-sheet_close w-full', {'bg-bankGradient': isActive})}>
+                      <SheetClose asChild key={item.label}>
+                        <Link href={item.route}  key={item.label} className={cn('mobilenav-sheet_close w-full', {'bg-bankGradient': isActive})}>
                             <Image 
                               src={item.imgURL}
                               alt={item.label}
